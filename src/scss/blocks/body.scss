@@ -3,24 +3,10 @@ html {
 }
 body {
   background-color: white;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
   color: black;
 }
 
-.back{
-  position:absolute;
-  top: 70px;
-  left : 80px;
-  z-index: 1;
-}
-
-.front
-{
-  position:absolute;
- top: 200px;
- left: 30px;
-  z-index: 1;
-}
 
 .form{
   position: absolute;
@@ -33,6 +19,7 @@ input{
   width: 350px;
   height: 40px;
   margin: 20px auto;
+  
 }
 
 .date_size{
@@ -50,3 +37,18 @@ input{
   text-align: center;
  
 }
+
+.date_cvv{
+  width: 210px;
+ height: 50px;
+ padding: 5px;
+ margin: 20px 6px auto;
+}
+
+placeholder{
+  background-color: #DFDEE0;
+}
+
+
+
+

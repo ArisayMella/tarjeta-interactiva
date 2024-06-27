@@ -1,0 +1,111 @@
+@use '../mixins/responsive.scss' as *;
+
+
+.back{
+    position:absolute;
+    top: 70px;
+    left : 80px;
+
+    @include responsive (laptop){
+        top: 540px;
+        left: 180px;
+        width: 447px;
+        height: 245px;
+
+
+
+    }
+    
+  }
+  
+  .front
+  {
+    position:absolute;
+   top: 200px;
+   left: 30px;
+    z-index: 1;
+
+    @include responsive (laptop){
+        top: 250px;
+        left: 100px;
+        width: 447px;
+        height: 245px;
+
+
+
+    }
+
+    
+  }
+  
+
+
+.card {
+    position: absolute;
+    width: 400px;
+    height: 200px;
+    background-size: cover;
+
+    @include responsive (laptop){
+        width: 447px;
+        height: 245px;
+
+
+
+    }
+
+    &--back{
+      background-image: url("./assets/images/images/bg-card-back.png")
+
+    }
+
+    &--front{
+      background-image: url("./assets/images/images/bg-card-front.png");
+    }
+
+    &_logo{
+       position: absolute; 
+      top: 20px;
+      left: 10px;
+      width: 60px;
+ 
+    }
+
+    &_name {
+        position: absolute;
+        top: 150px;
+        left: 19px;
+      font-size: 13px;
+
+        color: white;
+
+    }
+
+    &_number {
+        position: absolute;
+        top: 110px;
+        left: 19px;
+        color: white;
+        font-size: 25px;
+        letter-spacing: 2px;
+    }
+
+    &_month{
+        position: absolute;
+        top: 150px;
+        left: 200px;
+        color: white;
+        font-size: 15px;
+    }
+
+    &_year{
+        position: absolute;
+        top: 150px;
+        left: 220px;
+        color: white;
+        font-size: 15px;
+    }
+
+
+    
+  }

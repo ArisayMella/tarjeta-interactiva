@@ -5,35 +5,55 @@
     <!-- PON UN FAVICON!!! -->
     <link rel="icon" type="image/svg+xml" href="" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
     <!-- CAMBIA EL TITLE!!! -->
     <title>Vite Template</title>
   </head>
   <body>
     <main>
-      <section>
-    <div>
-      <img src="./assets/images/images/bg-main-mobile.png" alt="" width="500px">
-     <div class="back"><img src="./assets/images/images/bg-card-back.png" alt="" width="400px"></div> 
-     <div class="front"><img src="./assets/images/images/bg-card-front.png" alt="" width="400px"></div> 
+      <section class="aside">
+    <div class="card_container">
+    
+     <div class="back card"><img src="./assets/images/images/bg-card-back.png" alt="" width="400px"></div> 
+  
+     <div class="front card"><img src="./assets/images/images/bg-card-front.png" alt="" width="400px">
+      <img class="card_logo" src="./assets/images/images/card-logo.svg" alt="">
+      <span class="card_number"> 0000 0000 0000 0000 0000</span>
+    <span class="card_name"> JANE APPLESEED</span>
+    <span class="card_month"> 00/</span>
+    <span class="card_year"> 00</span>
+   
+  </div> 
     </div>
   </section>
 
   <section>
-    <form id="form" class="form">
+    <form class="form" >
+      <div class="form_field">
       <span>CARDHOLDER NAME</span> <br>
       <label for="name"></label> <br>
       <input type="text" name="name" id="name" placeholder="e.g Jane Appleseed"/> <br>
+      <!--<span class="error">cant </span> -->
+    </div>
+    <div class="form_field">
       <span>CARD NUMBER</span> <br>
       <label for="number"></label>
       <input type="text" name="number" id="number" placeholder="e.g. 1234 5678 9123 0000"/> <br>
+      <!--<span class="error">cant </span> -->
+    </div>
+    <div class="form_field">
       <span>Exp. Date (MM/YY) CVV</span> <br>
       <label for="date"></label> 
-      <input type="text" name="date" class="date_size" id="date" placeholder="MM"/>
+      <input type="text" name="date" class="date date_size" id="date" placeholder="MM"/>
       <input type="text" name="date" class="date_size" id="date" placeholder="YY"/>
-      <input type="text" name="date" class="date_size" id="date" placeholder="CVV"/> <br>
-     <input class="boton" type="confirmar" value="Confirmar">
- 
+      <input type="text" name="date" class="cvv date_cvv" id="date" placeholder="e.g.123"/> <br>
+     <input class="boton" type="confirmar" value="Confirm">
+     <!--<span class="error">cant </span> -->
+    </div>
     </form>
+
   </section>
   </main>
 
